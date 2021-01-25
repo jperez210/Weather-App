@@ -10,8 +10,8 @@ btn.addEventListener("click", getInput);
 function getInput (event) {
     event.preventDefault();
     if (event.type == "click") {
-        getData(search.value);
-        console.log(search.value)
+    getData(search.value);
+    console.log(search.value);
     }
 }
 
@@ -80,16 +80,3 @@ function dateBuilder (d) {
     return `${day} ${month} ${date}, ${year}`;
   
 }
-
-
-
-/*    }else{
-    message.classList.add('error');
-    message.innerHTML = "Browser not supported.";
-    setTimeout(() => message.remove(), 3000);
-}
-
-const image= document.querySelector(.)
-image.setAtttibute(src, img/night)
-
-*/
