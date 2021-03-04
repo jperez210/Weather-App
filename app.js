@@ -3,6 +3,8 @@ const api = {
     base: "https://api.openweathermap.org/data/2.5/"  
 }   
 
+const message = document.querySelector('.message');
+
 const search = document.querySelector(".search-bar");
 const btn = document.querySelector(".btn");
 btn.addEventListener("click", getInput);
@@ -24,8 +26,7 @@ function getData () {
 }
 
 function displayData (response) {
-    if (response.cod==="404" || search.value==="") {
-        const message = document.querySelector('.message')
+    if (response.cod=="404" || search.value=="") {
         message.classList.add('error');
         message.innerHTML = "Please enter a valid city.";
         setTimeout(() => message.remove(), 3000);
